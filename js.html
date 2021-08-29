@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+var a = [1, 12, 2, 3, 4, 5, 5, -1];
+
+var sum = a.reduce(function(a, b){
+return a +b;
+});
+ var av = a.length;
+ var calculation = sum/av;
+
+ function aboveAverage(above){
+   return above > calculation;
+ }
+ console.log(a.filter(aboveAverage));
+
+// var x = 0; 
+// for (var count = 6; count <=10; count = count + x){
+//   x++;
+// }
+// console.log(x);
+var x = 5; 
+while (x <=19) {
+  x = x+4;
+  console.log("value is "+ x);
+}
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

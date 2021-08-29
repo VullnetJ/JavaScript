@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<h1> hello albert</h1>
+
+<script>
+    
+    // for(let i = 0; i < 10; i++){
+    //     if(i ===2) {
+    //         console.log('2 is my favorite number');
+    //         continue;
+    //     }
+    //     if (i ===5){
+    //         console.log("Stop the loop")
+    //      break;   
+    //     }
+        
+    //     console.log("Number " + i);
+    // }
+//// we set the variable outside fo the loop for while loop
+// let i = 0;
+
+// while (i < 10) {
+//     console.log("Number "+ i);
+//     i++;
+// }
+
+// Do while loop
+// let i = 100;
+
+// do {
+    
+//     console.log("Number " + i);
+//     i++;
+// }
+// while(i<10);
+// Loop through array;
+const cars = ["Ford", "Chevy", "Toyota", "Honda", "Scoda"];
+
+// let i = 0;
+// while (i < car.length){
+//     console.log(car[i]);
+//     i ++;
+// }
+
+// For each
+cars.forEach(function(whatever, index, array){
+    console.log(`${index} : ${whatever}`);
+    console.log(array);
+})
+
+// Map return something different, different array;
+// const user = [
+//     {id:1, name: 'John'}, 
+//     {id:2, name: 'Sara'}, 
+//     {id:2, name: 'Karen'}
+// ];
+
+// const ids = user.map(function(user){
+//     return user.id;
+// });
+
+// console.log(ids);
+
+// For in loop is used for objects;
+
+const user = {
+    firstName: "John", 
+    lastName: 'Doe',
+    age: 40
+}
+
+for (let x in user) {
+    console.log(`${x} : ${user[x]}`) //console.log(x); it gives the key;
+}
+
+
+
+</script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+var x = [1,1,2,3,4,5,6,6,2,-2,-3,-4,-5,-1];
+
+// function removeNegative (arr) {
+//   for (var i = 0, j = 0, l = arr.length; i < l; i++) {
+//     if (arr[i] >= 0) {
+//       arr[j++] = arr[i];
+//     }
+//   }
+//   arr.length = j;
+//   return arr;
+// }
+
+//console.log(removeNegative(x));
+// let val;
+// val = Math.min(4,2,3, -3,5);
+// val = Math.max(4,2,3, -3,5);
+// val = Math.floor(Math.random()*20 +1);
+// console.log(val);
+    
+
+// const numbers = [45, 56, 55, 33, 23, 36, 5];
+// let nLeng = numbers.length;
+
+// //Splice values
+//  //const val = numbers.splice(0, 2);
+// // val  = numbers.sort(function(x, y){  // this sorts from biggest to smallest
+// //     return y -x;
+// // });
+// function under50(num){
+//     return num < 50;
+
+// };
+// val = numbers.find(under50);
+
+
+// console.log(val);
+var length = 0;
+
+ for (var i = 0; i <x.length; i++ ){
+    length++;
+ }
+var total = 0;
+ for (var i = 0; i <x.length; i ++ ){
+    total += x[i];
+ }
+var average = total/length;
+var count = 0;
+for (var i =0; i < x.length; i++ ) {
+    if (x[i]> average) {
+        count++;
+    }
+}
+console.log(count);
+//console.log(average);
+
+// function aboveAverage(above){
+//     return above > average;
+// }
+
+// console.log(x.filter(aboveAverage));
+
+
+
+    
+ </script>
+
+
+
+</body>
+</html>

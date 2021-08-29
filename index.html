@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body> 
+    
+<!-- <p style="text-align: center"> -->
+    <!-- <img src="img/cat.pgn" style="position: relative" alt="A cat"> -->
+</p>
+<button>Act-once button</button>
+
+<script src="javascript.js"></script>
+
+<script>
+    //let cat = document.querySelector("img");
+    // let angle = Math.PI/2;
+    // function animate(time, lastTime) {
+    //     if (lastTime != null) {
+    //         angle += (time - lastTime) * 0.001;
+    //     }
+    //     cat.style.top = (Math.sin(angle)*20) + "px";
+    //     cat.style.left = (Math.sin(angle)*20) + "px";
+    //     requestAnimationFrame(newTime => animate(newTime, time));
+    // }
+    // requestAnimationFrame(animate)
+
+//window.addEventListener("click", () => {    //is used to show in DOM if someone click on website
+//    document.write("You knocked?");
+//}
+
+//);
+
+// let button = document.querySelector("button");
+// function once() {
+//     console.log("Done");
+//     button.removeEventListener("click", once);
+// }
+// button.addEventListener("click", once); // after one click it shows that is done
+
+// let populationArray = {Name: "Finland", Population:'50000', };
+// console.log(populationArray);
+
+// for ( i = 0; i <=populationArray.length; i ++ ) {
+//     console.log(populationArray[i]);
+// }
+
+// this is how to
+// let country = {Name: "Finland", Population:'50000', };
+// console.log(country);
+
+// for ( i = 0; i <=country.length; i ++ ) {
+//     console.log(this.Name);
+// }
+
+// let countryArray = [{Name: "Finland", Population:'50000', }, // so it saves as links to the object, 
+//                 {Name: "Sweden", Population:'60000' }, // the array saves the link of the objects. 
+//                 {Name: "Norway", Population:'70000', }];
+
+// var jsonString = JSON.stringify(countryArray);  
+
+// console.log(jsonString);
+// for (let i = 0; i <countryArray.length; i++){
+//     console.log("The capital is " + jsonString);
+// }
+
+var myCountry = {Name: "Finland", Population:'50000'};
+console.log(myCountry.Name);
+var anotherCountry = myCountry;
+anotherCountry.Name = "Sweden";
+console.log("The new country name is " + myCountry.Name);
+
+
+
+
+
+</script>
+
+</body>
+</html>

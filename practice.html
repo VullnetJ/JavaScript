@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+
+var myArray=[-1,-2,-3,0,0,5,12,0,-10,-1,-2,-3,0,0,5,12,0,-10];
+ 2
+// for ( var i = 100; i <= 500; i ++){
+//     console.log(i);
+// }
+
+function findAverage(av){
+    let sum = 0;
+    
+  for (let i = 0; i < myArray.length; i++){
+      sum += myArray[i];
+      }
+        //return sum/ myArray.length;   we calculate the average but is is not needed to display it. 
+      return av > sum/ myArray.length;
+};
+console.log(myArray.filter(findAverage));
+
+
+//if ()    {count++};
+//let count =0;
+//3
+// function myFunction(neg){
+//     return neg <0;
+// }
+// console.log(myArray.filter(myFunction));
+// //4
+function myFunc(max, min){
+    max = 5;
+    min = 3;
+    if (max>min){
+        console.log(max);
+    }
+    else{
+       console.log(min);
+    }
+};
+myFunc();
+// 5
+function myFactorial(integer){
+    if(integer ===0){
+        return 1;
+    }
+    else {
+        return integer*myFactorial(integer-1);
+    };
+}
+console.log(myFactorial(5));
+//6
+function max(){
+    var array = Math.max(1,2,3,4,4,5,6);
+    console.log(array);
+};
+max();
+
+function factorial(n) {
+   
+        return n ? n * factorial(n - 1):1;
+
+  
+};
+
+console.log( factorial(5) ); // 120
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+var array = [-1,-2, -4, -5, 1, 2, 3, 4, 5, 6, 8, 7]; //find if positive length is more than negative; 
+
+
+var positive = [];
+var negative = [];
+
+for (var i = 0; i < array.length; i ++) {
+    if (array[i]>0) {
+        positive.push(array[i]);
+    }
+    else {
+        negative.push(array[i]);
+    }
+}
+if (positive>negative) {
+    console.log("yes");
+}
+else {
+    console.log("NOOO");
+}
+
+
+
+
+
+
+var a = {a: 4,  b: 9}
+var b = {a: 3, b: 5}
+b = a;    
+a = b;
+document.write(a.b );
+
+</script>
+
+
+    
+</body>
+</html>

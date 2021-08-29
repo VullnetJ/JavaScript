@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+    var array = [-1,-2, -4, -5, 1, 2, 3, 4, 5, 6, 8, 7];
+   
+    var sumOfArray = 0;
+    for (i = 0; i < array.length; i ++) {
+        sumOfArray += array[i];
+    };
+
+    var length = 0;
+    for (i = 0; i <array.length; i++) {
+        length ++; 
+    };
+    var aboveAverage = 0; 
+    for (i = 0; i < array.length; i ++ ) {
+        if (array[i] > sumOfArray/length) {
+            aboveAverage++;
+            console.log("The above average is: "+array[i]);
+        }
+    }
+
+
+   var x = 0; 
+   for (var count = 7; count <= 10; count = count + x){
+       x++; 
+   }
+   console.log(" the value is " + x);
+
+
+var computeEndTime;
+var startTime = 22; 
+var age = 17; 
+var time; 
+
+
+function calculate(){
+    if (age < 18 && startTime > 19) {
+        computeEndTime = (startTime + 5) - 24; 
+    }
+    else {
+        computeEndTime = startTime + 5; 
+    }
+    console.log("The computed time is " + computeEndTime);
+    if (age >= 18 && time >16 ) {
+        computeEndTime = (startTime  + 8) - 24;
+    }
+}
+calculate();
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
